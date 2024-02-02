@@ -49,5 +49,3 @@ contract VaultV1 is Initializable, ERC20Upgradeable, ERC4626Upgradeable, UUPSUpg
     }
 
 }
-
-

@@ -25,9 +25,14 @@ contract DeployVaultV2 is Script {
     ) public returns (address) {
         vm.startBroadcast();
         VaultV1 proxy = VaultV1(payable(proxyAddress));
-        bytes memory data = abi.encodeWithSelector(VaultV2.initializeV2.selector, msg.sender);
-        proxy.upgradeToAndCall(address(newVault), data);
+
+        bytes memory data = abi.encodeWithSelector(
+        VaultV2.initializeV2.selector, 
+        msg.sender, 
+        0xF09F0369aB0a875254fB565E52226c88f10Bc839
+        );
         
+        proxy.upgradeToAndCall(address(newVault), data);
         vm.stopBroadcast();
         return address(proxy);
     }
