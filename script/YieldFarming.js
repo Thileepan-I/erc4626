@@ -1,5 +1,6 @@
 const abi = require ("../out/VaultV2.sol/VaultV2.json");
 const { ethers } = require("ethers");
+require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
 
@@ -22,8 +23,7 @@ const getERC1967ProxyAddress = (transactions) => {
 const provider = new ethers.JsonRpcProvider("https://polygon-mumbai.g.alchemy.com/v2/Z63eRknGRKayFksi5zbqwCj_pr9baRm8");
 
 // Wallet initialization
-const privateKey = "1dedd376ce3dd19552db68eb8deb8852458de59f72e6b5c3810cc5805e4aae88"; // Replace with your private key
-const wallet = new ethers.Wallet(privateKey, provider);
+const wallet = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
 
 // Contract addresses and ABIs
 const usdcAddress = "0xDB3cB4f2688daAB3BFf59C24cC42D4B6285828e9";
