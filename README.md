@@ -6,8 +6,10 @@ Here Polygon mumbai testnet is used. Deployed contracts, provided USDC to compou
 
 ### Deployed Contacts
 1.Vault V1 - [0xfd5203e97dc548B3951F71d08B04Bf272dA70F60](https://mumbai.polygonscan.com/address/0xfd5203e97dc548B3951F71d08B04Bf272dA70F60)
-2. Vault V2 - [0xec2ad735C500Dc7AaF77E31051b5c63360413E81](https://mumbai.polygonscan.com/address/0xec2ad735C500Dc7AaF77E31051b5c63360413E81)
-3. Proxy contract - [0x39D3042ee6535AF0b11f0B62Af4e1Bc723Dc297A](https://mumbai.polygonscan.com/address/0x39D3042ee6535AF0b11f0B62Af4e1Bc723Dc297A)
+
+2.Vault V2 - [0xec2ad735C500Dc7AaF77E31051b5c63360413E81](https://mumbai.polygonscan.com/address/0xec2ad735C500Dc7AaF77E31051b5c63360413E81)
+
+3.Proxy contract - [0x39D3042ee6535AF0b11f0B62Af4e1Bc723Dc297A](https://mumbai.polygonscan.com/address/0x39D3042ee6535AF0b11f0B62Af4e1Bc723Dc297A)
 
 ## Steps to clone the repo
 
