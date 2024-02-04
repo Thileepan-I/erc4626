@@ -122,7 +122,7 @@ contract TestVaultUpgrade is Test {
     vault.withdrawReserves(withdrawAmount, address(this));
     vm.stopPrank();
 }
-    function testReserveAnd() public {
+    function testReserveAndEmergencyWithdraw() public {
        VaultV2 vault = VaultV2(address(proxy));
         uint256 depositAmount = 10000;
         uint256 reserveLimit = 1000;

@@ -36,10 +36,6 @@ contract VaultV1 is Initializable, ERC20Upgradeable, ERC4626Upgradeable, UUPSUpg
 
     function _authorizeUpgrade(address newImplementation) internal onlyRole(UPGRADER_ROLE) override {}
 
-    function approveAsset(address spender, uint256 amount) public {
-    IERC20(asset()).approve(spender, amount);
-    }
-
     function allowanceAsset(address owner, address spender) public view returns (uint256) {
     return IERC20(asset()).allowance(owner, spender);
     }
